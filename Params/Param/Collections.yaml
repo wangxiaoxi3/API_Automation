@@ -1,0 +1,21 @@
+---
+Collections:
+  dec: "专辑和文集"
+  parameters:
+    -
+      url: /users/da1677475c27/collections_and_notebooks
+      data: slug=da1677475c27
+      header: {
+                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                  Chrome/67.0.3396.99 Safari/537.36",
+                 "Content-Type": "keep-alive"
+              }
+
+    -
+      url: /users/95c34f9cc50c/collections_and_notebooks
+      data: slug=95c34f9cc50c
+      header: {
+                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                  Chrome/67.0.3396.99 Safari/537.36",
+                 "Content-Type": "keep-alive"
+              }

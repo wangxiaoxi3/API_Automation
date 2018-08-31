@@ -1,0 +1,68 @@
+{
+  "uid" : "c6051a7bd042ed32",
+  "name" : "TestPersonal.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1535078098264,
+    "stop" : 1535078099229,
+    "duration" : 965
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "stackTrace" : "self = <test_personal.TestPersonal object at 0x10ec51cf8>, action = 'release'\n\n    @pytest.allure.feature('Personal')\n    @allure.severity('blocker')\n    @allure.story('Personal')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下更新Personal个人简介\n            \"\"\"\n        conf = Config()\n        data = Personal()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://'+host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url+urls[0]\n>       response = request.post_request(api_url, params[0][0], headers[0])\n\nTestCase/test_personal.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/Request.py:114: in post_request\n    response_dicts['body'] = response.json()\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:892: in json\n    return complexjson.loads(self.text, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py:319: in loads\n    return _default_decoder.decode(s)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <json.decoder.JSONDecoder object at 0x105650f98>\ns = '<!DOCTYPE html>\\n<!--[if IE 6]><html class=\"ie lt-ie8\"><![endif]-->\\n<!--[if IE 7]><html class=\"ie lt-ie8\"><![endif]-...etElementsByTagName(\"script\")[0];\\n      s.parentNode.insertBefore(bp, s);\\n  })();\\n</script>\\n\\n  </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n            a JSON document) and return a 2-tuple of the Python\n            representation and the index in ``s`` where the document ended.\n    \n            This can be used to decode a JSON document from a string that may\n            have extraneous data at the end.\n    \n            \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py:357: JSONDecodeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "3be94c024829a724",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "cac3a7af-268a-4723-863e-5ee69ed2a8c8-attachment.txt",
+    "type" : "text/plain",
+    "size" : 857,
+    "uid" : "cde929d9be51c8d6"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "feature",
+    "value" : "Personal"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "64242-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

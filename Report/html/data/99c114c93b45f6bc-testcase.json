@@ -1,0 +1,62 @@
+{
+  "uid" : "99c114c93b45f6bc",
+  "name" : "TestCollections.test_collections_01",
+  "title" : "Test collections 01",
+  "time" : {
+    "start" : 1535078061573,
+    "stop" : 1535078061574,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Personal').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n            用例描述：查看用户'da1677475c27'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "66db4d881cd50d1c",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "64167-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

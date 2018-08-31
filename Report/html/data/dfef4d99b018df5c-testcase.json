@@ -1,0 +1,41 @@
+{
+  "uid" : "dfef4d99b018df5c",
+  "name" : "TestBasic",
+  "title" : "Test basic",
+  "time" : {
+    "start" : 1534925903669,
+    "stop" : 1534925903669,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "failed",
+    "stackTrace" : "/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:617: in __call__\n    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:222: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:216: in <lambda>\n    firstresult=hook.spec_opts.get('firstresult'),\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:192: in pytest_pycollect_makeitem\n    res = list(collector._genfunctions(name, obj))\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:370: in _genfunctions\n    self.ihook.pytest_generate_tests(metafunc=metafunc)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:617: in __call__\n    return self._hookexec(self, self._nonwrappers + self._wrappers, kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:222: in _hookexec\n    return self._inner_hookexec(hook, methods, kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pluggy/__init__.py:216: in <lambda>\n    firstresult=hook.spec_opts.get('firstresult'),\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:117: in pytest_generate_tests\n    metafunc.parametrize(*marker.args, **marker.kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/_pytest/python.py:798: in parametrize\n    self.function, name, arg))\nE   ValueError: <function TestBasic.test_basic_01 at 0x10ecb7048> uses no argument '中文'"
+  },
+  "description" : {
+    "value" : "This is the tests collection phase. Failures are modules that failed to collect.",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "1d231f6998a8436d",
+    "name" : "test_collection_phase",
+    "title" : "Collection phase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Collection phase"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collection_phase"
+  } ],
+  "parameters" : [ ]
+}

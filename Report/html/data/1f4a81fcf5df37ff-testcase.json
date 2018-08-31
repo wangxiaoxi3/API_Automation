@@ -1,0 +1,65 @@
+{
+  "uid" : "1f4a81fcf5df37ff",
+  "name" : "TestBasic.test_basic_02",
+  "title" : "Test basic 02",
+  "time" : {
+    "start" : 1535033118488,
+    "stop" : 1535033118786,
+    "duration" : 298
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "498c27277eaf9109",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "be811b81-3b9b-4590-bfd3-b9f9610eb1b4-attachment.txt",
+    "type" : "text/plain",
+    "size" : 404,
+    "uid" : "be0998d25954aa2f"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "thread",
+    "value" : "49803-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

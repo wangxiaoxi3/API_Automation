@@ -1,0 +1,50 @@
+Log.py                      70 INFO     [INFO 2018-08-22 15:08:41]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+Log.py                      70 INFO     [INFO 2018-08-22 15:08:41]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /settings/basic.json HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /settings/basic.json HTTP/1.1" 401 None
+Image.py                   403 DEBUG    Importing BmpImagePlugin
+Image.py                   403 DEBUG    Importing BufrStubImagePlugin
+Image.py                   403 DEBUG    Importing CurImagePlugin
+Image.py                   403 DEBUG    Importing DcxImagePlugin
+Image.py                   403 DEBUG    Importing DdsImagePlugin
+Image.py                   403 DEBUG    Importing EpsImagePlugin
+Image.py                   403 DEBUG    Importing FitsStubImagePlugin
+Image.py                   403 DEBUG    Importing FliImagePlugin
+Image.py                   403 DEBUG    Importing FpxImagePlugin
+Image.py                   403 DEBUG    Importing FtexImagePlugin
+Image.py                   403 DEBUG    Importing GbrImagePlugin
+Image.py                   403 DEBUG    Importing GifImagePlugin
+Image.py                   403 DEBUG    Importing GribStubImagePlugin
+Image.py                   403 DEBUG    Importing Hdf5StubImagePlugin
+Image.py                   403 DEBUG    Importing IcnsImagePlugin
+Image.py                   403 DEBUG    Importing IcoImagePlugin
+Image.py                   403 DEBUG    Importing ImImagePlugin
+Image.py                   403 DEBUG    Importing ImtImagePlugin
+Image.py                   403 DEBUG    Importing IptcImagePlugin
+Image.py                   403 DEBUG    Importing JpegImagePlugin
+Image.py                   403 DEBUG    Importing Jpeg2KImagePlugin
+Image.py                   403 DEBUG    Importing McIdasImagePlugin
+Image.py                   403 DEBUG    Importing MicImagePlugin
+Image.py                   403 DEBUG    Importing MpegImagePlugin
+Image.py                   403 DEBUG    Importing MpoImagePlugin
+Image.py                   403 DEBUG    Importing MspImagePlugin
+Image.py                   403 DEBUG    Importing PalmImagePlugin
+Image.py                   403 DEBUG    Importing PcdImagePlugin
+Image.py                   403 DEBUG    Importing PcxImagePlugin
+Image.py                   403 DEBUG    Importing PdfImagePlugin
+Image.py                   403 DEBUG    Importing PixarImagePlugin
+Image.py                   403 DEBUG    Importing PngImagePlugin
+Image.py                   403 DEBUG    Importing PpmImagePlugin
+Image.py                   403 DEBUG    Importing PsdImagePlugin
+Image.py                   403 DEBUG    Importing SgiImagePlugin
+Image.py                   403 DEBUG    Importing SpiderImagePlugin
+Image.py                   403 DEBUG    Importing SunImagePlugin
+Image.py                   403 DEBUG    Importing TgaImagePlugin
+Image.py                   403 DEBUG    Importing TiffImagePlugin
+Image.py                   403 DEBUG    Importing WebPImagePlugin
+Image.py                   403 DEBUG    Importing WmfImagePlugin
+Image.py                   403 DEBUG    Importing XbmImagePlugin
+Image.py                   403 DEBUG    Importing XpmImagePlugin
+Image.py                   403 DEBUG    Importing XVThumbImagePlugin

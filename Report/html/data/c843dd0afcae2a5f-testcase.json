@@ -1,0 +1,59 @@
+{
+  "uid" : "c843dd0afcae2a5f",
+  "name" : "TestPersonal.test_personal_02",
+  "title" : "Test personal 02",
+  "time" : {
+    "start" : 1534920194039,
+    "stop" : 1534920194040,
+    "duration" : 1
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Home').",
+    "stackTrace" : ""
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "75e6d4198390f2f8",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "thread",
+    "value" : "59532-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

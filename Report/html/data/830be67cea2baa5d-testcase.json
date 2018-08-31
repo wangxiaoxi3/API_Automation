@@ -1,0 +1,74 @@
+{
+  "uid" : "830be67cea2baa5d",
+  "name" : "TestBasic.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1534860619124,
+    "stop" : 1534860619273,
+    "duration" : 149
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "MissingSchema: Invalid URL '/Login': No schema supplied. Perhaps you meant http:///Login?",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10eaaf630>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n>       request = Request.Request(action)\n\nTestCase/test_basic.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/Request.py:24: in __init__\n    self.get_session = self.session.get_session(env)\nCommon/Session.py:45: in get_session\n    response = session_release.post(login_url, parm, headers=headers)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:555: in post\n    return self.request('POST', url, data=data, json=json, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:494: in request\n    prep = self.prepare_request(req)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:437: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:305: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>, url = '/Login', params = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/requests/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode('utf8')\n        else:\n            url = unicode(url) if is_py2 else str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if ':' in url and not url.lower().startswith('http'):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n            error = (\"Invalid URL {0!r}: No schema supplied. Perhaps you meant http://{0}?\")\n            error = error.format(to_native_string(url, 'utf8'))\n    \n>           raise MissingSchema(error)\nE           requests.exceptions.MissingSchema: Invalid URL '/Login': No schema supplied. Perhaps you meant http:///Login?\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:379: MissingSchema"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "40d86897ad08955d",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "b8d84308-2d24-486b-ba03-fb635d6674ae-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "cab6704cd6afb5f2"
+  }, {
+    "title" : "Captured log call",
+    "source" : "a29356a1-fd51-4808-9da4-c9660b1aba40-attachment.txt",
+    "type" : "text/plain",
+    "size" : 303,
+    "uid" : "b476aac1a09a9491"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "thread",
+    "value" : "24020-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

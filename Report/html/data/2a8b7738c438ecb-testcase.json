@@ -1,0 +1,65 @@
+{
+  "uid" : "2a8b7738c438ecb",
+  "name" : "TestCollections.test_collections_01",
+  "title" : "Test collections 01",
+  "time" : {
+    "start" : 1535075984053,
+    "stop" : 1535075984688,
+    "duration" : 635
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：查看用户'da1677475c27'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "39061ab4fda79855",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "83744d55-13d4-4e51-87a0-d93f72264741-attachment.txt",
+    "type" : "text/plain",
+    "size" : 490,
+    "uid" : "689cd9b8a7499f0c"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "thread",
+    "value" : "60269-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

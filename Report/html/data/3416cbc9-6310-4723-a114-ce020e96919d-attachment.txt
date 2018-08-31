@@ -1,0 +1,1 @@
+Log.py                      64 INFO     [INFO 2018-08-20 21:43:15]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini

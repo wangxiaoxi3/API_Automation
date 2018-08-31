@@ -1,0 +1,74 @@
+{
+  "uid" : "1cb92f374f7fd982",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534906768016,
+    "stop" : 1534906769851,
+    "duration" : 1835
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AttributeError: 'dict' object has no attribute 'append'",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebc4048>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n>       response = request.get_request(api_url, params[0], headers[0])\n\nTestCase/test_basic.py:37: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Request.Request object at 0x10ebc47b8>\nurl = 'http://www.jianshu.com/settings/basic.json', data = None\nheader = {'Content-Type': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/67.0.3396.99 Safari/537.36'}\n\n    def get_request(self, url, data, header):\n        \"\"\"\n            :param url:\n            :param data:\n            :param header:\n            :return:\n    \n            \"\"\"\n        if not url.startswith('http://'):\n            url = '%s%s' % ('http://', url)\n            print(url)\n    \n        try:\n            if data is None:\n                response = self.get_session.get(url=url, headers=header)\n            else:\n                response = self.get_session.get(url=url, params=data, headers=header)\n    \n        except requests.RequestException as e:\n            print('%s%s' % ('RequestException url: ', url))\n            print(e)\n            return ()\n    \n        except Exception as e:\n            print('%s%s' % ('Exception url: ', url))\n            print(e)\n            return ()\n    \n        time_consuming = response.elapsed.total_seconds()\n>       Common.Consts.STRESS_LIST.append(time_consuming)\nE       AttributeError: 'dict' object has no attribute 'append'\n\nCommon/Request.py:56: AttributeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "5df0cb7e6f56aa45",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "2a7574b8-904f-4982-9f8c-4959cf28059f-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "1fb70428f9f62a44"
+  }, {
+    "title" : "Captured log call",
+    "source" : "559efa7d-bc51-429e-9aec-453367c94f88-attachment.txt",
+    "type" : "text/plain",
+    "size" : 707,
+    "uid" : "924a1b1f9ddf9b04"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "37213-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

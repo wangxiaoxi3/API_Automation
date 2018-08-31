@@ -1,0 +1,71 @@
+{
+  "uid" : "51e849a1efdf235a",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534171561029,
+    "stop" : 1534171561031,
+    "duration" : 2
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "用例名：Pending Advertiser",
+    "url" : "用例名：Pending Advertiser"
+  },
+  "suite" : {
+    "uid" : "db402334abe91610",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ {
+    "name" : "BUG号：123",
+    "url" : "BUG号：123"
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "issue",
+    "value" : "BUG号：123"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "thread",
+    "value" : "92260-MainThread"
+  } ],
+  "parameters" : [ ]
+}

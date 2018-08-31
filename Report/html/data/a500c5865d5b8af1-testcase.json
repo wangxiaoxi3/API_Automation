@@ -1,0 +1,41 @@
+{
+  "uid" : "a500c5865d5b8af1",
+  "name" : "test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534771732259,
+    "stop" : 1534771732259,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "failed",
+    "stackTrace" : "TestCase/test_pending_aff.py:11: in <module>\n    from Params.params import PendingAffList\nParams/params.py:8: in <module>\n    data = tools.GetPages().get_page_list()\nParams/tools.py:29: in get_page_list\n    for page, value in pages.items():\nE   AttributeError: 'NoneType' object has no attribute 'items'"
+  },
+  "description" : {
+    "value" : "This is the tests collection phase. Failures are modules that failed to collect.",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "73d9e9492cebb40d",
+    "name" : "test_collection_phase",
+    "title" : "Collection phase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Collection phase"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collection_phase"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "34f6a92f04657f7f",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534924680230,
+    "stop" : 1534924680836,
+    "duration" : 606
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "KeyError: 'time_total'",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebd79b0>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.get_request(api_url, params[0], headers[0])\n>       print(response['time_total'])\nE       KeyError: 'time_total'\n\nTestCase/test_basic.py:40: KeyError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "ef0b621fa0b1018a",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "220d2709-0b2d-44fc-b5fc-e1e19f9dd8d9-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "682486b77d2cb38f"
+  }, {
+    "title" : "Captured log call",
+    "source" : "1e72b6d4-73ea-44f0-9b11-356b8dc18c1c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 707,
+    "uid" : "c332853ba7a33ac3"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "67555-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

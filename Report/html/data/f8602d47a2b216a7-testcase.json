@@ -1,0 +1,65 @@
+{
+  "uid" : "f8602d47a2b216a7",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534832972556,
+    "stop" : 1534832972657,
+    "duration" : 101
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: environment() takes 1 positional argument but 2 were given",
+    "stackTrace" : "@pytest.fixture()\n    def action():\n        # 定义环境\n        env = Consts.API_ENVIRONMENT_DEBUG\n        # 定义报告中environment\n        conf = Config()\n        host = conf.host_debug\n        tester = conf.tester_debug\n        allure.environment(environment='debug')\n        allure.environment(hostname=host)\n        allure.environment(tester=tester)\n>       allure.environment('API')\nE       TypeError: environment() takes 1 positional argument but 2 were given\n\nTestCase/conftest.py:28: TypeError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "c0cbf31d0a94032d",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "b01603ed-809e-44a5-a388-177ce2bea863-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "a60df3b27cafd2ba"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "thread",
+    "value" : "94828-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

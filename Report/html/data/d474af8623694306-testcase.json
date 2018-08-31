@@ -1,0 +1,65 @@
+{
+  "uid" : "d474af8623694306",
+  "name" : "TestPersonal.test_personal_02",
+  "title" : "Test personal 02",
+  "time" : {
+    "start" : 1535078767771,
+    "stop" : 1535078768388,
+    "duration" : 617
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "ac91fe3a506ff6e3",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "36d5b40d-964d-4002-bf03-5e81a3d30ee9-attachment.txt",
+    "type" : "text/plain",
+    "size" : 857,
+    "uid" : "9d7dc0d1d242496d"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "thread",
+    "value" : "65552-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Personal"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

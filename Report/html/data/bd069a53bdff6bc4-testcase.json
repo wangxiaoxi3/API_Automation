@@ -1,0 +1,65 @@
+{
+  "uid" : "bd069a53bdff6bc4",
+  "name" : "TestCollections.test_collections_02",
+  "title" : "Test collections 02",
+  "time" : {
+    "start" : 1535032544751,
+    "stop" : 1535032545464,
+    "duration" : 713
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：查看用户'95c34f9cc50c'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "87d5ec0b2cfb8b80",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "3768204d-8c9f-4480-880d-8c625ff6930f-attachment.txt",
+    "type" : "text/plain",
+    "size" : 490,
+    "uid" : "dc9632c5e39e4741"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "48751-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

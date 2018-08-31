@@ -1,0 +1,75 @@
+{
+  "hosts" : [ {
+    "title" : "xiaoxideMacBook-Pro.local",
+    "threads" : [ {
+      "title" : "22732-MainThread",
+      "testCases" : [ {
+        "uid" : "65f986de8cb310ba",
+        "name" : "TestBasic.test_basic_01",
+        "title" : "Test basic 01",
+        "time" : {
+          "start" : 1535204977749,
+          "stop" : 1535204978950,
+          "duration" : 1201
+        },
+        "severity" : "BLOCKER",
+        "status" : "FAILED"
+      }, {
+        "uid" : "a6aff1360f7758ca",
+        "name" : "TestBasic.test_basic_02",
+        "title" : "Test basic 02",
+        "time" : {
+          "start" : 1535204978952,
+          "stop" : 1535204979937,
+          "duration" : 985
+        },
+        "severity" : "BLOCKER",
+        "status" : "PASSED"
+      }, {
+        "uid" : "a39632286a1b4050",
+        "name" : "TestPersonal.test_personal_01",
+        "title" : "Test personal 01",
+        "time" : {
+          "start" : 1535204981939,
+          "stop" : 1535204983042,
+          "duration" : 1103
+        },
+        "severity" : "BLOCKER",
+        "status" : "PASSED"
+      }, {
+        "uid" : "c9595bc76facffee",
+        "name" : "TestPersonal.test_personal_02",
+        "title" : "Test personal 02",
+        "time" : {
+          "start" : 1535204983044,
+          "stop" : 1535204984378,
+          "duration" : 1334
+        },
+        "severity" : "BLOCKER",
+        "status" : "PASSED"
+      }, {
+        "uid" : "ee03ea36d4b5c6a0",
+        "name" : "TestCollections.test_collections_01",
+        "title" : "Test collections 01",
+        "time" : {
+          "start" : 1535204979940,
+          "stop" : 1535204980902,
+          "duration" : 962
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "92b6231676d02f05",
+        "name" : "TestCollections.test_collections_02",
+        "title" : "Test collections 02",
+        "time" : {
+          "start" : 1535204980903,
+          "stop" : 1535204981938,
+          "duration" : 1035
+        },
+        "severity" : "BLOCKER",
+        "status" : "FAILED"
+      } ]
+    } ]
+  } ]
+}

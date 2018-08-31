@@ -1,0 +1,74 @@
+{
+  "uid" : "8426747c3299b64f",
+  "name" : "TestBasic.test_personal_02",
+  "title" : "Test personal 02",
+  "time" : {
+    "start" : 1534860987550,
+    "stop" : 1534860987984,
+    "duration" : 434
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 401 == 200",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ecc0588>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_personal_02(self, action):\n        \"\"\"\n                用例描述：登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[1]\n        response = request.post_request(api_url, params[1], headers[1])\n        # print(response)\n        print(response[1][1][1])\n>       assert response[0] == 200\nE       assert 401 == 200\n\nTestCase/test_basic.py:60: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "916f80d68a9baa8d",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "15cc6b8f-b1eb-4982-bc5d-7b96413de9d9-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "714652e0bb741bd9"
+  }, {
+    "title" : "Captured log call",
+    "source" : "c750c06d-5b22-4aa5-b92b-e07aacad5e49-attachment.txt",
+    "type" : "text/plain",
+    "size" : 708,
+    "uid" : "779aa1a379b86525"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "thread",
+    "value" : "24700-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

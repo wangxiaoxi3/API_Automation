@@ -1,0 +1,68 @@
+{
+  "uid" : "9524562d8cbf3e44",
+  "name" : "TestPendingAdv.test_adv_02",
+  "title" : "Test adv 02",
+  "time" : {
+    "start" : 1534772977757,
+    "stop" : 1534772979168,
+    "duration" : 1411
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_pending_adv.TestPendingAdv object at 0x10f193550>, action = None\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('blocker')\n    @allure.story('Pending Advertiser')\n    def test_adv_02(self, action):\n        \"\"\"\n            用例描述：Pending Advertiser case 02\n            \"\"\"\n        # conf = Config()\n        # data = PendingAdvList()\n        # env = 'debug'\n        # req = Request.Request(env)\n        # host = conf.host_debug\n        # req_url = 'http://'+host\n        # urls = data.url\n        # datas = data.data\n        # headers = data.header\n        #\n        # api_url = req_url+urls[0]\n        # ss = req.post_request(api_url, datas[0],headers[0])\n        # print(ss)\n        # print(ss[1][1])\n        # assert ss[0] == 200\n>       assert 0\nE       assert 0\n\nTestCase/test_pending_adv.py:69: AssertionError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 02\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "75dac1796802966d",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "a19396c9-251b-40e2-81ee-3448e580388c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "6d67b9264f3cdec4"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "54921-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

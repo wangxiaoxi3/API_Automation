@@ -1,0 +1,74 @@
+{
+  "uid" : "3957cbd7e97d8c03",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534918019247,
+    "stop" : 1534918019892,
+    "duration" : 645
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert False\n +  where False = <bound method Assertions.assert_code of <Common.Assert.Assertions object at 0x10ecbcef0>>(401, 300)\n +    where <bound method Assertions.assert_code of <Common.Assert.Assertions object at 0x10ecbcef0>> = <Common.Assert.Assertions object at 0x10ecbcef0>.assert_code",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ecbcda0>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.get_request(api_url, params[0], headers[0])\n        print(response)\n        print(response['body']['error'])\n        # assert response['code'] == 401\n>       assert test.assert_code(response['code'], 300)\nE       assert False\nE        +  where False = <bound method Assertions.assert_code of <Common.Assert.Assertions object at 0x10ecbcef0>>(401, 300)\nE        +    where <bound method Assertions.assert_code of <Common.Assert.Assertions object at 0x10ecbcef0>> = <Common.Assert.Assertions object at 0x10ecbcef0>.assert_code\n\nTestCase/test_basic.py:43: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "351c1d2fd19dedc4",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "73a93262-7f50-4207-a23b-5086ce9a1cb0-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "4ebc9eeb9b00f0bf"
+  }, {
+    "title" : "Captured log call",
+    "source" : "937af4ac-1075-4f1c-945e-8a2f03bee882-attachment.txt",
+    "type" : "text/plain",
+    "size" : 813,
+    "uid" : "5506f1a42b858f1d"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "55775-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,71 @@
+{
+  "uid" : "8e8fcaef41e85fec",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534907584260,
+    "stop" : 1534907584725,
+    "duration" : 465
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "74416b90ba54f87f",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "db94f604-91c9-43ee-a525-ed72456feb0b-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "cd9f4f39939f087c"
+  }, {
+    "title" : "Captured log call",
+    "source" : "fee0aa4c-3cf4-4be8-8d35-aa99cb474f50-attachment.txt",
+    "type" : "text/plain",
+    "size" : 707,
+    "uid" : "619fbdf8139edb6"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "thread",
+    "value" : "38629-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

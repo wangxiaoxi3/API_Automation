@@ -1,0 +1,74 @@
+{
+  "uid" : "74776a6f718c10c2",
+  "name" : "TestPersonal.test_personal_02",
+  "title" : "Test personal 02",
+  "time" : {
+    "start" : 1535031438012,
+    "stop" : 1535031438914,
+    "duration" : 902
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "stackTrace" : "self = <test_personal.TestPersonal object at 0x11101fe48>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Personal')\n    def test_personal_02(self, action):\n        \"\"\"\n                用例描述：登陆状态下更新Personal个人简介\n            \"\"\"\n        conf = Config()\n        data = Personal()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://'+host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url+urls[1]\n>       response = request.post_request(api_url, params[1], headers[1])\n\nTestCase/test_personal.py:59: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/Request.py:109: in post_request\n    response_dicts['body'] = response.json()\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:892: in json\n    return complexjson.loads(self.text, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/__init__.py:319: in loads\n    return _default_decoder.decode(s)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py:339: in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <json.decoder.JSONDecoder object at 0x105532048>\ns = '<!DOCTYPE html>\\n<!--[if IE 6]><html class=\"ie lt-ie8\"><![endif]-->\\n<!--[if IE 7]><html class=\"ie lt-ie8\"><![endif]-...etElementsByTagName(\"script\")[0];\\n      s.parentNode.insertBefore(bp, s);\\n  })();\\n</script>\\n\\n  </body>\\n</html>\\n'\nidx = 0\n\n    def raw_decode(self, s, idx=0):\n        \"\"\"Decode a JSON document from ``s`` (a ``str`` beginning with\n            a JSON document) and return a 2-tuple of the Python\n            representation and the index in ``s`` where the document ended.\n    \n            This can be used to decode a JSON document from a string that may\n            have extraneous data at the end.\n    \n            \"\"\"\n        try:\n            obj, end = self.scan_once(s, idx)\n        except StopIteration as err:\n>           raise JSONDecodeError(\"Expecting value\", s, err.value) from None\nE           json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/json/decoder.py:357: JSONDecodeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d8e1f48d446887ef",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "7f0e116b-4cb1-4534-8196-965df8c7f1e5-attachment.txt",
+    "type" : "text/plain",
+    "size" : 1181,
+    "uid" : "a94818f1e29da19a"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "4646b0a2-9e24-4025-ad21-fe1366f41c75-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "85cf6fb3a8f8c9c4"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "46717-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

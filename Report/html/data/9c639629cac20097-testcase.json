@@ -1,0 +1,71 @@
+{
+  "uid" : "9c639629cac20097",
+  "name" : "TestCollections.test_collections_01",
+  "title" : "Test collections 01",
+  "time" : {
+    "start" : 1534860987987,
+    "stop" : 1534860988287,
+    "duration" : 300
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n            用例描述：查看用户'da1677475c27'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "8657739401670413",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "13e67e52-9388-4e8f-aa89-5be03033969d-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "1569683083a0f0b"
+  }, {
+    "title" : "Captured log call",
+    "source" : "5631c44f-5c60-4699-9139-9720b2d9956f-attachment.txt",
+    "type" : "text/plain",
+    "size" : 794,
+    "uid" : "b3d2190929a30481"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "thread",
+    "value" : "24700-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

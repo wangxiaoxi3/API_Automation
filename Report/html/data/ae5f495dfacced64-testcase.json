@@ -1,0 +1,68 @@
+{
+  "uid" : "ae5f495dfacced64",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534149977607,
+    "stop" : 1534149978398,
+    "duration" : 791
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AttributeError: 'tuple' object has no attribute 'conf'",
+    "stackTrace" : "self = <test_Pending_Adv.TestPendingAdv object at 0x10eb6b4e0>\naction = (<Config.Config.Config object at 0x10eb6be10>, <Data.datas.PendingAdvList object at 0x10eb930b8>)\n\n    @pytest.allure.feature('Feature2')\n    def test_adv_01(self, action):\n        env = 'debug'\n        req = Request.Request(env)\n>       host = action.conf.host_debug\nE       AttributeError: 'tuple' object has no attribute 'conf'\n\nTestCase/test_Pending_Adv.py:16: AttributeError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "76d3f0633bf742cc",
+    "name" : "test_Pending_Adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "f6c903eb-0281-4d04-afc3-c12958a2381f-attachment.txt",
+    "type" : "text/plain",
+    "size" : 371,
+    "uid" : "67d5ac061680aef"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "fd74342d-8548-4a14-892f-de2c51302b11-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "d23a816e4b3c44df"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "thread",
+    "value" : "72204-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_Pending_Adv"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

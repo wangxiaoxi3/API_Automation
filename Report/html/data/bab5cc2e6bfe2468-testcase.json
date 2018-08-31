@@ -1,0 +1,74 @@
+{
+  "uid" : "bab5cc2e6bfe2468",
+  "name" : "TestPersonal.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1534860988680,
+    "stop" : 1534860989198,
+    "duration" : 518
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: string indices must be integers",
+    "stackTrace" : "self = <test_personal.TestPersonal object at 0x10edc74a8>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Personal')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下更新Personal个人简介\n            \"\"\"\n        conf = Config()\n        data = Personal()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://'+host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url+urls[0]\n        response = request.post_request(api_url, params[0], headers[0])\n        print(response)\n>       print(response[1][1]['Response body'])\nE       TypeError: string indices must be integers\n\nTestCase/test_personal.py:38: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d70144a7ddceb3e9",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "c422c5f7-80dc-43fd-8924-d0585d4ef66c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "2aa68f0b45db13d7"
+  }, {
+    "title" : "Captured log call",
+    "source" : "25d9493b-3a45-4f5e-bedd-e35a9c093e4c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 1161,
+    "uid" : "81616a996ce233f2"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "thread",
+    "value" : "24700-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

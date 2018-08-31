@@ -1,0 +1,68 @@
+{
+  "uid" : "d11be01c5451a655",
+  "name" : "TestPersonal.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1535077326978,
+    "stop" : 1535077327888,
+    "duration" : 910
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 200 == 403",
+    "stackTrace" : "self = <test_personal.TestPersonal object at 0x10ed359e8>, action = 'release'\n\n    @pytest.allure.feature('Personal')\n    @allure.severity('blocker')\n    @allure.story('Personal')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下更新Personal个人简介\n            \"\"\"\n        conf = Config()\n        data = Personal()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://'+host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url+urls[0]\n        # print(params[0][0])\n        response = request.post_request(api_url, params[0][0], headers[0])\n        print(response['text'])\n>       assert response['code'] == 403\nE       assert 200 == 403\n\nTestCase/test_personal.py:40: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "7c1e0acce2fbe62b",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "9b9c1ae6-079f-40ca-b235-fc1be7ee9efd-attachment.txt",
+    "type" : "text/plain",
+    "size" : 857,
+    "uid" : "fa77173ae22c37a4"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "feature",
+    "value" : "Personal"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "thread",
+    "value" : "62888-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

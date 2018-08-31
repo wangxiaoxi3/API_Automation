@@ -1,0 +1,65 @@
+{
+  "uid" : "b67242e90a247b2",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534168265065,
+    "stop" : 1534168265068,
+    "duration" : 3
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_Pending_Aff.TestPendingAff object at 0x10eb9c240>\n\n    @pytest.allure.feature('Feature2')\n    @allure.severity('critical')\n    @allure.story('Pending Advertiser')\n    @allure.testcase(\"用例名：Pending Advertiser\")\n    def test_pending_aff(self):\n        # conf = Config()\n        # data = PendingAffList()\n        # #环境定义\n        # env = 'debug'\n        # req = Request.Request(env)\n        # #URL拼接\n        # host = conf.host_debug\n        # req_url = 'http://' + host\n        #\n        # urls = data.url\n        # datas = data.data\n        # headers = data.header\n        #\n        # for i in range(0, len(urls)):\n        #     api_url = req_url + urls[i]\n        #     sss = req.post_request(api_url, datas[i], headers[i])\n        #     print(sss)\n>       assert 0\nE       assert 0\n\nTestCase/test_Pending_Aff.py:39: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "用例名：Pending Advertiser",
+    "url" : "用例名：Pending Advertiser"
+  },
+  "suite" : {
+    "uid" : "af10409d76c5e12f",
+    "name" : "test_Pending_Aff",
+    "title" : "Test pending aff"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Advertiser"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_Pending_Aff"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "86463-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "b59ca06fb990343e",
+  "name" : "TestCollections.test_collections_02",
+  "title" : "Test collections 02",
+  "time" : {
+    "start" : 1534860988289,
+    "stop" : 1534860988678,
+    "duration" : 389
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: string indices must be integers",
+    "stackTrace" : "self = <test_collections.TestCollections object at 0x10ecc77b8>\naction = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Collections')\n    def test_collections_02(self, action):\n        \"\"\"\n                用例描述：查看用户'95c34f9cc50c'的Collections\n            \"\"\"\n        conf = Config()\n        data = Collections()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[1]\n        response = request.post_request(api_url, params[1], headers[1])\n        # print(response)\n>       print(response[1][1][0]['Response body'])\nE       TypeError: string indices must be integers\n\nTestCase/test_collections.py:62: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：查看用户'95c34f9cc50c'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "8657739401670413",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "8e928197-699b-43ed-b988-251014ce62e8-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "3066067c56f37956"
+  }, {
+    "title" : "Captured log call",
+    "source" : "20dfcfc9-ed1f-47d7-8ece-6a5000db4261-attachment.txt",
+    "type" : "text/plain",
+    "size" : 794,
+    "uid" : "8c5672e87ca9ff55"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "thread",
+    "value" : "24700-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

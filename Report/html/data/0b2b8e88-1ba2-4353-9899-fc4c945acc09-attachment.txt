@@ -1,0 +1,49 @@
+Image.py                   403 DEBUG    Importing BmpImagePlugin
+Image.py                   403 DEBUG    Importing BufrStubImagePlugin
+Image.py                   403 DEBUG    Importing CurImagePlugin
+Image.py                   403 DEBUG    Importing DcxImagePlugin
+Image.py                   403 DEBUG    Importing DdsImagePlugin
+Image.py                   403 DEBUG    Importing EpsImagePlugin
+Image.py                   403 DEBUG    Importing FitsStubImagePlugin
+Image.py                   403 DEBUG    Importing FliImagePlugin
+Image.py                   403 DEBUG    Importing FpxImagePlugin
+Image.py                   403 DEBUG    Importing FtexImagePlugin
+Image.py                   403 DEBUG    Importing GbrImagePlugin
+Image.py                   403 DEBUG    Importing GifImagePlugin
+Image.py                   403 DEBUG    Importing GribStubImagePlugin
+Image.py                   403 DEBUG    Importing Hdf5StubImagePlugin
+Image.py                   403 DEBUG    Importing IcnsImagePlugin
+Image.py                   403 DEBUG    Importing IcoImagePlugin
+Image.py                   403 DEBUG    Importing ImImagePlugin
+Image.py                   403 DEBUG    Importing ImtImagePlugin
+Image.py                   403 DEBUG    Importing IptcImagePlugin
+Image.py                   403 DEBUG    Importing JpegImagePlugin
+Image.py                   403 DEBUG    Importing Jpeg2KImagePlugin
+Image.py                   403 DEBUG    Importing McIdasImagePlugin
+Image.py                   403 DEBUG    Importing MicImagePlugin
+Image.py                   403 DEBUG    Importing MpegImagePlugin
+Image.py                   403 DEBUG    Importing MpoImagePlugin
+Image.py                   403 DEBUG    Importing MspImagePlugin
+Image.py                   403 DEBUG    Importing PalmImagePlugin
+Image.py                   403 DEBUG    Importing PcdImagePlugin
+Image.py                   403 DEBUG    Importing PcxImagePlugin
+Image.py                   403 DEBUG    Importing PdfImagePlugin
+Image.py                   403 DEBUG    Importing PixarImagePlugin
+Image.py                   403 DEBUG    Importing PngImagePlugin
+Image.py                   403 DEBUG    Importing PpmImagePlugin
+Image.py                   403 DEBUG    Importing PsdImagePlugin
+Image.py                   403 DEBUG    Importing SgiImagePlugin
+Image.py                   403 DEBUG    Importing SpiderImagePlugin
+Image.py                   403 DEBUG    Importing SunImagePlugin
+Image.py                   403 DEBUG    Importing TgaImagePlugin
+Image.py                   403 DEBUG    Importing TiffImagePlugin
+Image.py                   403 DEBUG    Importing WebPImagePlugin
+Image.py                   403 DEBUG    Importing WmfImagePlugin
+Image.py                   403 DEBUG    Importing XbmImagePlugin
+Image.py                   403 DEBUG    Importing XpmImagePlugin
+Image.py                   403 DEBUG    Importing XVThumbImagePlugin
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /users/da1677475c27?user%5Bintro%5D=%E4%B8%80%E4%B8%AA%E5%8B%A4%E5%8B%A4%E6%81%B3%E6%81%B3%E5%81%9A%E6%B5%8B%E8%AF%95%E7%9A%84%E8%BD%AF%E5%A6%B9%E7%BA%B8&commit=%E4%BF%9D%E5%AD%98&_method=patch HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /users/da1677475c27?user%5Bintro%5D=%E4%B8%80%E4%B8%AA%E5%8B%A4%E5%8B%A4%E6%81%B3%E6%81%B3%E5%81%9A%E6%B5%8B%E8%AF%95%E7%9A%84%E8%BD%AF%E5%A6%B9%E7%BA%B8&commit=%E4%BF%9D%E5%AD%98&_method=patch HTTP/1.1" 301 104
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /u/da1677475c27 HTTP/1.1" 200 None

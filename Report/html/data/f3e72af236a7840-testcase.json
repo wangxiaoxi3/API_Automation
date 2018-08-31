@@ -1,0 +1,68 @@
+{
+  "uid" : "f3e72af236a7840",
+  "name" : "TestBasic.test_basic_02",
+  "title" : "Test basic 02",
+  "time" : {
+    "start" : 1535034351549,
+    "stop" : 1535034352004,
+    "duration" : 455
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: ",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ec209b0>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_02(self, action):\n        \"\"\"\n                用例描述：登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[1]\n        response = request.post_request(api_url, params[1], headers[1])\n    \n        assert test.assert_code(response['code'], 401)\n>       assert test.assert_text(response['text'], '{\"error\":\"继续操作前请注册或者登录9.\"}')\n\nTestCase/test_basic.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Assert.Assertions object at 0x10ec2a4a8>\nbody = '{\"error\":\"继续操作前请注册或者登录.\"}', expected_msg = '{\"error\":\"继续操作前请注册或者登录9.\"}'\n\n    def assert_text(self, body, expected_msg):\n        \"\"\"\n            验证response body中是否等于预期字符串\n            :param body:\n            :param expected_msg:\n            :return:\n            \"\"\"\n        try:\n>           assert body == expected_msg\nE           AssertionError\n\nCommon/Assert.py:83: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "e460380072915996",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "f3b9836c-1918-4aac-b7ff-045501b8bb3b-attachment.txt",
+    "type" : "text/plain",
+    "size" : 628,
+    "uid" : "ca63e7f590f94f2"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "thread",
+    "value" : "52176-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

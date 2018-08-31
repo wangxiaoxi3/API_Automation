@@ -1,0 +1,62 @@
+{
+  "uid" : "d78b1cc53623bc74",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534157237988,
+    "stop" : 1534157238669,
+    "duration" : 681
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AttributeError: 'TestPendingAff' object has no attribute 'conf'",
+    "stackTrace" : "self = <test_Pending_Aff.TestPendingAff object at 0x10eb8eeb8>\n\n    @pytest.allure.feature('Feature2')\n    def test_pending_aff(self):\n        conf = Config()\n        data = PendingAffList()\n        #环境定义\n        env = 'debug'\n        req = Request.Request(env)\n        #URL拼接\n>       host = self.conf.host_debug\nE       AttributeError: 'TestPendingAff' object has no attribute 'conf'\n\nTestCase/test_Pending_Aff.py:24: AttributeError"
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "c5ccab80411880d3",
+    "name" : "test_Pending_Aff",
+    "title" : "Test pending aff"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "4ccb70ba-87b8-43cf-abd8-c0e27367f5de-attachment.txt",
+    "type" : "text/plain",
+    "size" : 523,
+    "uid" : "db085aebb09486be"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "thread",
+    "value" : "83743-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_Pending_Aff"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

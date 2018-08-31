@@ -1,0 +1,74 @@
+{
+  "uid" : "a20e7fd9ef182c46",
+  "name" : "TestBasic.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1534861128855,
+    "stop" : 1534861129132,
+    "duration" : 277
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: string indices must be integers",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebb70f0>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.post_request(api_url, params[0], headers[0])\n        print(response)\n        print(response[1][0])\n>       print(response[1][0]['Response body'])\nE       TypeError: string indices must be integers\n\nTestCase/test_basic.py:37: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "5f7ca55329865331",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "e949768f-866d-4031-ac2e-4b3f56b7f51a-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "ea918f81b2cfe91a"
+  }, {
+    "title" : "Captured log call",
+    "source" : "73657716-a6ee-4932-91eb-b5edc1367aa9-attachment.txt",
+    "type" : "text/plain",
+    "size" : 708,
+    "uid" : "959b7c2e8bdb49d8"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "24991-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

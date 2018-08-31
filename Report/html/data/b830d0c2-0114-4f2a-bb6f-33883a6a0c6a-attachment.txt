@@ -1,0 +1,4 @@
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /users/95c34f9cc50c/collections_and_notebooks?slug=95c34f9cc50c HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /users/95c34f9cc50c/collections_and_notebooks?slug=95c34f9cc50c HTTP/1.1" 200 None

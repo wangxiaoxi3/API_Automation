@@ -1,0 +1,59 @@
+{
+  "uid" : "96a3671700fb1990",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534157275845,
+    "stop" : 1534157277507,
+    "duration" : 1662
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "363cfa85ccb290c2",
+    "name" : "test_Pending_Aff",
+    "title" : "Test pending aff"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "5fd2551a-9560-449a-999b-2da0fc921714-attachment.txt",
+    "type" : "text/plain",
+    "size" : 879,
+    "uid" : "a8e6763ee9b53610"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_Pending_Aff"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "83834-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

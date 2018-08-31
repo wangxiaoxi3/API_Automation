@@ -1,0 +1,5 @@
+Log.py                      64 INFO     [INFO 2018-08-20 22:06:32]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+Log.py                      64 INFO     [INFO 2018-08-20 22:06:32]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): frontend-pre.aflt.kiwisns.com
+connectionpool.py          396 DEBUG    http://frontend-pre.aflt.kiwisns.com:80 "POST /postLogin HTTP/1.1" 200 None
+connectionpool.py          396 DEBUG    http://frontend-pre.aflt.kiwisns.com:80 "POST /admin/advertiser/manage?status=2&am_id=-1&page_no=1&page_count=10 HTTP/1.1" 200 None

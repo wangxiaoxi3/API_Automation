@@ -1,0 +1,74 @@
+{
+  "uid" : "acd39331fbe65f0",
+  "name" : "TestBasic.test_basic_02",
+  "title" : "Test basic 02",
+  "time" : {
+    "start" : 1534921564598,
+    "stop" : 1534921565113,
+    "duration" : 515
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: ",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ecda668>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_02(self, action):\n        \"\"\"\n                用例描述：登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[1]\n        response = request.post_request(api_url, params[1], headers[1])\n        print(response)\n    \n        assert test.assert_code(response['code'], 401)\n>       assert test.assert_text(response['body'], u'继续')\n\nTestCase/test_basic.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Assert.Assertions object at 0x10ece4da0>\nbody = {'error': '继续操作前请注册或者登录.'}, expected_msg = '继续'\n\n    def assert_text(self, body, expected_msg):\n        try:\n            text = json.dumps(body)\n            print(text)\n>           assert expected_msg in text\nE           AssertionError\n\nCommon/Assert.py:43: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "552c218c759af621",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "b9ed5e57-7167-4a4c-a12b-767deb1f486e-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "49fe69567c409b35"
+  }, {
+    "title" : "Captured log call",
+    "source" : "01107da3-bf06-4c72-9bb3-6c7e40fcf21b-attachment.txt",
+    "type" : "text/plain",
+    "size" : 843,
+    "uid" : "28dc122d386860e"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "62055-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

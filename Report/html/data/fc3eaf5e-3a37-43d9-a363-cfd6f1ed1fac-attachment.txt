@@ -1,0 +1,5 @@
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /settings/basic.json HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /settings/basic.json HTTP/1.1" 401 None
+Log.py                      82 ERROR    [ERROR 2018-08-24 09:59:43]Response body != expected_msg, expected_msg is {"error":"继续操作前请注册或者登录9."}, body is {"error":"继续操作前请注册或者登录."}

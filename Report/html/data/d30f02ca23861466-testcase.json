@@ -1,0 +1,71 @@
+{
+  "uid" : "d30f02ca23861466",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534168857824,
+    "stop" : 1534168857893,
+    "duration" : 69
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_pending_aff.TestPendingAff object at 0x10eb75240>\n\n    @pytest.allure.feature('Feature2')\n    @allure.severity('critical')\n    @allure.story('Pending Affiliate')\n    @allure.issue(\"BUG号：789\")\n    @allure.testcase(\"用例名：Pending Affiliate\")\n    def test_pending_aff(self):\n        # conf = Config()\n        # data = PendingAffList()\n        # #环境定义\n        # env = 'debug'\n        # req = Request.Request(env)\n        # #URL拼接\n        # host = conf.host_debug\n        # req_url = 'http://' + host\n        #\n        # urls = data.url\n        # datas = data.data\n        # headers = data.header\n        #\n        # for i in range(0, len(urls)):\n        #     api_url = req_url + urls[i]\n        #     sss = req.post_request(api_url, datas[i], headers[i])\n        #     print(sss)\n>       assert 0\nE       assert 0\n\nTestCase/test_pending_aff.py:40: AssertionError"
+  },
+  "description" : null,
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "用例名：Pending Affiliate",
+    "url" : "用例名：Pending Affiliate"
+  },
+  "suite" : {
+    "uid" : "c8f3bcfc3c202e0a",
+    "name" : "test_pending_aff",
+    "title" : "Test pending aff"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ {
+    "name" : "BUG号：789",
+    "url" : "BUG号：789"
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_aff"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "issue",
+    "value" : "BUG号：789"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "story",
+    "value" : "Pending Affiliate"
+  }, {
+    "name" : "thread",
+    "value" : "87585-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Affiliate"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,53 @@
+{
+  "uid" : "2c12a0920768b0dd",
+  "name" : "test_case",
+  "title" : "Test case",
+  "time" : {
+    "start" : 1534149821441,
+    "stop" : 1534149821443,
+    "duration" : 2
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "Skipped: Not suitable with selected labels: ('feature', 'Feature2').",
+    "stackTrace" : ""
+  },
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "CANCELED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "63c72e101cf787c5",
+    "name" : "test_case01",
+    "title" : "Test case 01"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "71908-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_case01"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

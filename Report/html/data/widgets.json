@@ -1,0 +1,99 @@
+{
+  "hash" : "9ae4a52f46fbba0c959575303f697deb73e72d63",
+  "data" : [ {
+    "statistic" : {
+      "total" : 6,
+      "passed" : 4,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 2,
+      "broken" : 0
+    },
+    "time" : {
+      "start" : 1535204977749,
+      "stop" : 1535204984378,
+      "duration" : 6629
+    },
+    "name" : "total",
+    "type" : "TOTAL"
+  }, {
+    "name" : "defects",
+    "type" : "DEFECTS",
+    "data" : [ {
+      "count" : 2,
+      "message" : "AssertionError: ",
+      "status" : "FAILED"
+    } ]
+  }, {
+    "name" : "xunit",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Test basic",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Test collections",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Test personal",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "behaviors",
+    "type" : "TITLE_STATISTICS",
+    "data" : [ {
+      "title" : "Home",
+      "statistic" : {
+        "total" : 4,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 2,
+        "broken" : 0
+      }
+    }, {
+      "title" : "Personal",
+      "statistic" : {
+        "total" : 2,
+        "passed" : 2,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      }
+    } ]
+  }, {
+    "name" : "environment",
+    "type" : "KEY_VALUE",
+    "data" : [ {
+      "key" : "environment",
+      "value" : "release"
+    }, {
+      "key" : "hostname",
+      "value" : "www.jianshu.com"
+    }, {
+      "key" : "tester",
+      "value" : "wang xiao xi"
+    } ]
+  } ]
+}

@@ -1,0 +1,68 @@
+{
+  "uid" : "7afb6843304099ee",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534168857821,
+    "stop" : 1534168857823,
+    "duration" : 2
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "BLOCKER",
+  "status" : "PASSED",
+  "testId" : {
+    "name" : "用例名：Pending Advertiser",
+    "url" : "用例名：Pending Advertiser"
+  },
+  "suite" : {
+    "uid" : "f4d3c7925b597b21",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ {
+    "name" : "BUG号：123",
+    "url" : "BUG号：123"
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "issue",
+    "value" : "BUG号：123"
+  }, {
+    "name" : "thread",
+    "value" : "87585-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

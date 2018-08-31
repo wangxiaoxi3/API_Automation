@@ -1,0 +1,74 @@
+{
+  "uid" : "70811ebac0dc1b7d",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534904495646,
+    "stop" : 1534904495734,
+    "duration" : 88
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebb7588>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.get_request(api_url, params[0], headers[0])\n        print(response)\n        # print(response[1][0])\n        # print(response[1][0][0])\n        # assert response[0] == 401\n>       assert 0\nE       assert 0\n\nTestCase/test_basic.py:41: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "32fa5bd6a542a506",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "48bfe34e-47e8-4d49-9183-d21226ccd51c-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "88e31a28b29b1c43"
+  }, {
+    "title" : "Captured log call",
+    "source" : "4802f6c4-dfab-4090-9e59-e563f5441c69-attachment.txt",
+    "type" : "text/plain",
+    "size" : 303,
+    "uid" : "35d115f6d82ed9c0"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "thread",
+    "value" : "33262-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

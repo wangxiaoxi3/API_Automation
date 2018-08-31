@@ -1,0 +1,74 @@
+{
+  "uid" : "7209175fadff1e3f",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534919702272,
+    "stop" : 1534919703428,
+    "duration" : 1156
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert False\n +  where False = <bound method Assertions.assert_body of <Common.Assert.Assertions object at 0x10eac4c88>>({'error': '继续操作前请注册或者登录.'}, 'error', '继续操作前请注册或者登录.1')\n +    where <bound method Assertions.assert_body of <Common.Assert.Assertions object at 0x10eac4c88>> = <Common.Assert.Assertions object at 0x10eac4c88>.assert_body",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10eac4828>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.get_request(api_url, params[0], headers[0])\n    \n    \n        # assert test.assert_code(response['code'], 401), '错了错了，返回的不是True'\n>       assert test.assert_body(response['body'], 'error', u'继续操作前请注册或者登录.1')\nE       AssertionError: assert False\nE        +  where False = <bound method Assertions.assert_body of <Common.Assert.Assertions object at 0x10eac4c88>>({'error': '继续操作前请注册或者登录.'}, 'error', '继续操作前请注册或者登录.1')\nE        +    where <bound method Assertions.assert_body of <Common.Assert.Assertions object at 0x10eac4c88>> = <Common.Assert.Assertions object at 0x10eac4c88>.assert_body\n\nTestCase/test_basic.py:43: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "79de2c728a13d867",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "29509896-5991-491b-9bf8-3ff737e2af3d-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "edc3c6496ea53db1"
+  }, {
+    "title" : "Captured log call",
+    "source" : "c27e1ddf-bd2f-4828-bcc5-f3d7fa439609-attachment.txt",
+    "type" : "text/plain",
+    "size" : 851,
+    "uid" : "4fd0173fbafbedbf"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "58665-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

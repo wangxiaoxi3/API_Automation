@@ -1,0 +1,68 @@
+{
+  "uid" : "325d8abc70a71e65",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1535076011071,
+    "stop" : 1535076011988,
+    "duration" : 917
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: ",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ed53080>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        # print(urls)\n        response = request.get_request(api_url, params[0], headers[0])\n        # print(response)\n        # print(response['time_total'])\n        # print(response['time_consuming'])\n    \n        assert test.assert_code(response['code'], 401)\n        assert test.assert_body(response['body'], 'error', u'继续操作前请注册或者登录.')\n>       assert test.assert_time(response['time_consuming'], 400)\n\nTestCase/test_basic.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Assert.Assertions object at 0x10ed538d0>, time = 482.745\nexpected_time = 400\n\n    def assert_time(self, time, expected_time):\n        \"\"\"\n            验证response body响应时间小于预期最大响应时间,单位：毫秒\n            :param body:\n            :param expected_time:\n            :return:\n            \"\"\"\n        try:\n>           assert time < expected_time\nE           AssertionError\n\nCommon/Assert.py:102: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "f5defedcd07b1869",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "e6a81a72-31ed-4f2c-bae9-3f0acb1cb72e-attachment.txt",
+    "type" : "text/plain",
+    "size" : 575,
+    "uid" : "52f55d7e13b2bfbc"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "60342-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

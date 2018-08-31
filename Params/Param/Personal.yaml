@@ -1,0 +1,31 @@
+---
+Personal:
+  dec: Personal introduction
+  parameters:
+    -
+      url: /users/da1677475c27
+      data:
+        -
+          utf8:
+          _method: patch
+          user[intro]: '测试'
+          commit: '保存'
+      header: {
+                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                  Chrome/67.0.3396.99 Safari/537.36",
+                 "Content-Type": "application/x-www-form-urlencoded"
+              }
+
+    -
+      url: /users/da1677475c27
+      data:
+        -
+          utf8:
+          _method: patch
+          user[intro]: '妹纸'
+          commit: '保存'
+      header: {
+                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)\
+                  Chrome/67.0.3396.99 Safari/537.36",
+                 "Content-Type": "application/x-www-form-urlencoded"
+              }

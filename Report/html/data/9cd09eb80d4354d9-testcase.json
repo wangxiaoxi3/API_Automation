@@ -1,0 +1,74 @@
+{
+  "uid" : "9cd09eb80d4354d9",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534772038271,
+    "stop" : 1534772041055,
+    "duration" : 2784
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AttributeError: module 'run' has no attribute 'env'",
+    "stackTrace" : "self = <test_pending_adv.TestPendingAdv object at 0x11028ff98>, action = None\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('blocker')\n    @allure.story('Pending Advertiser')\n    def test_adv_01(self, action):\n        \"\"\"\n            用例描述：Pending Advertiser case 01\n            \"\"\"\n        conf = Config()\n        data = PendingAdvList()\n>       env = run.env\nE       AttributeError: module 'run' has no attribute 'env'\n\nTestCase/test_pending_adv.py:28: AttributeError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "241a200e1b79ffee",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "f04abdf7-ed18-48ea-9c47-95a11f5ee290-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "25ea41a5751bad74"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "9de29efe-f67b-4d77-a0c5-ecb3f18fdeb5-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "ee8c27e6ddefbf02"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "thread",
+    "value" : "53207-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

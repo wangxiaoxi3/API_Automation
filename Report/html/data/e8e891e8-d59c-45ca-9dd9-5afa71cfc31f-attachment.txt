@@ -1,0 +1,7 @@
+Log.py                      70 INFO     [INFO 2018-08-23 21:39:26]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+Log.py                      70 INFO     [INFO 2018-08-23 21:39:26]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Config/config.ini
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /users/da1677475c27?_method=patch&user[intro]=%22%E4%B8%80%E4%B8%AA%E5%8B%A4%E5%8B%A4%E6%81%B3%E6%81%B3%E5%81%9A%E6%B5%8B%E8%AF%95%E7%9A%84%E8%BD%AF%E5%A6%B9%E7%BA%B8!!%22&commit=%22%E4%BF%9D%E5%AD%98%22 HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /users/da1677475c27?_method=patch&user[intro]=%22%E4%B8%80%E4%B8%AA%E5%8B%A4%E5%8B%A4%E6%81%B3%E6%81%B3%E5%81%9A%E6%B5%8B%E8%AF%95%E7%9A%84%E8%BD%AF%E5%A6%B9%E7%BA%B8!!%22&commit=%22%E4%BF%9D%E5%AD%98%22 HTTP/1.1" 301 104
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /u/da1677475c27 HTTP/1.1" 200 None

@@ -1,0 +1,68 @@
+{
+  "uid" : "af87e3d275f3a9fb",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534820193447,
+    "stop" : 1534820194471,
+    "duration" : 1024
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : null,
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "381c6385efe76036",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "5ed0fecf-900e-4738-a2fa-5bd6a824cdfe-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "e738b0cacc307bc2"
+  }, {
+    "title" : "Captured log call",
+    "source" : "b9ccb316-4ddd-494f-9f05-c1f5c6c1ef34-attachment.txt",
+    "type" : "text/plain",
+    "size" : 695,
+    "uid" : "8019ac5104cb0c19"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "thread",
+    "value" : "72671-MainThread"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

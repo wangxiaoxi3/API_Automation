@@ -1,0 +1,19 @@
+<ns0:environment xmlns:ns0="urn:model.commons.qatools.yandex.ru">
+  <id>8e657e65-5520-4883-ab6b-8157288c9068</id>
+  <name>Allure environment parameters</name>
+  <parameter>
+    <key>environment</key>
+    <name>environment</name>
+    <value>release</value>
+  </parameter>
+  <parameter>
+    <key>hostname</key>
+    <name>hostname</name>
+    <value>www.jianshu.com</value>
+  </parameter>
+  <parameter>
+    <key>tester</key>
+    <name>tester</name>
+    <value>wang xiao xi</value>
+  </parameter>
+</ns0:environment>

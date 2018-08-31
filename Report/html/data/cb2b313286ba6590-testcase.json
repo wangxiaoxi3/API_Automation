@@ -1,0 +1,74 @@
+{
+  "uid" : "cb2b313286ba6590",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534771786192,
+    "stop" : 1534771786196,
+    "duration" : 4
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_pending_aff.TestPendingAff object at 0x10ebe4940>\n\n    @pytest.allure.feature('Feature2')\n    @allure.severity('critical')\n    @allure.story('Pending Affiliate')\n    @allure.issue(\"BUG号：789\")\n    @allure.testcase(\"用例名：Pending Affiliate\")\n    def test_pending_aff(self):\n        \"\"\"\n            用例描述：Pending Affiliate case 01\n            \"\"\"\n        # conf = Config()\n        # data = PendingAffList()\n        # #环境定义\n        # env = 'debug'\n        # req = Request.Request(env)\n        # #URL拼接\n        # host = conf.host_debug\n        # req_url = 'http://' + host\n        #\n        # urls = data.url\n        # datas = data.data\n        # headers = data.header\n        #\n        # for i in range(0, len(urls)):\n        #     api_url = req_url + urls[i]\n        #     sss = req.post_request(api_url, datas[i], headers[i])\n        #     print(sss)\n>       assert 0\nE       assert 0\n\nTestCase/test_pending_aff.py:43: AssertionError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Affiliate case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "CRITICAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "用例名：Pending Affiliate",
+    "url" : "用例名：Pending Affiliate"
+  },
+  "suite" : {
+    "uid" : "f57480a9f78c2efa",
+    "name" : "test_pending_aff",
+    "title" : "Test pending aff"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ {
+    "name" : "BUG号：789",
+    "url" : "BUG号：789"
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Feature2"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_aff"
+  }, {
+    "name" : "thread",
+    "value" : "52738-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "issue",
+    "value" : "BUG号：789"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "story",
+    "value" : "Pending Affiliate"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Affiliate"
+  } ],
+  "parameters" : [ ]
+}

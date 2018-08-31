@@ -1,0 +1,5 @@
+connectionpool.py          208 DEBUG    Starting new HTTP connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    http://www.jianshu.com:80 "POST /users/da1677475c27?commit='%E4%BF%9D%E5%AD%98' HTTP/1.1" 301 278
+connectionpool.py          824 DEBUG    Starting new HTTPS connection (1): www.jianshu.com
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /users/da1677475c27?commit='%E4%BF%9D%E5%AD%98' HTTP/1.1" 301 104
+connectionpool.py          396 DEBUG    https://www.jianshu.com:443 "GET /u/da1677475c27 HTTP/1.1" 200 None

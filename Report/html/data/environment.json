@@ -1,0 +1,18 @@
+{
+  "id" : "8e657e65-5520-4883-ab6b-8157288c9068",
+  "name" : "Allure environment parameters",
+  "url" : null,
+  "parameter" : [ {
+    "name" : "environment",
+    "key" : "environment",
+    "value" : "release"
+  }, {
+    "name" : "hostname",
+    "key" : "hostname",
+    "value" : "www.jianshu.com"
+  }, {
+    "name" : "tester",
+    "key" : "tester",
+    "value" : "wang xiao xi"
+  } ]
+}

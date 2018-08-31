@@ -1,0 +1,74 @@
+{
+  "uid" : "7d5e4bb66020d03c",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1535031564081,
+    "stop" : 1535031564906,
+    "duration" : 825
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: ",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebf9710>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        # print(urls)\n        response = request.get_request(api_url, params[0], headers[0])\n        # print(response)\n        # print(response['time_total'])\n        # print(response['time_consuming'])\n    \n        assert test.assert_code(response['code'], 401)\n        assert test.assert_body(response['body'], 'error', u'继续操作前请注册或者登录.')\n>       assert test.assert_time(response['time_consuming'], 400)\n\nTestCase/test_basic.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Assert.Assertions object at 0x10ec047b8>, time = 539.996\nexpected_time = 400\n\n    def assert_time(self, time, expected_time):\n        \"\"\"\n            验证response body响应时间小于预期最大响应时间,单位：毫秒\n            :param body:\n            :param expected_time:\n            :return:\n            \"\"\"\n        try:\n>           assert time < expected_time\nE           AssertionError\n\nCommon/Assert.py:93: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "f2b0144a274e4625",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "aa56ba6b-1501-47d9-bc32-fbc3b5587af1-attachment.txt",
+    "type" : "text/plain",
+    "size" : 862,
+    "uid" : "4cc3efba819ec5c5"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "f6ab3837-84e1-4647-b0cf-40dfb7aaf62a-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "918f317c796ea923"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "thread",
+    "value" : "46942-MainThread"
+  } ],
+  "parameters" : [ ]
+}

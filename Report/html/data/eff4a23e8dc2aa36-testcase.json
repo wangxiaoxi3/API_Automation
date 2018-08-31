@@ -1,0 +1,74 @@
+{
+  "uid" : "eff4a23e8dc2aa36",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534771990523,
+    "stop" : 1534771996198,
+    "duration" : 5675
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AttributeError: module 'run' has no attribute 'env'",
+    "stackTrace" : "self = <test_pending_adv.TestPendingAdv object at 0x110390cf8>, action = None\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('blocker')\n    @allure.story('Pending Advertiser')\n    def test_adv_01(self, action):\n        \"\"\"\n            用例描述：Pending Advertiser case 01\n            \"\"\"\n        conf = Config()\n        data = PendingAdvList()\n>       env = run.env\nE       AttributeError: module 'run' has no attribute 'env'\n\nTestCase/test_pending_adv.py:28: AttributeError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d178d2a610b0c980",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "6f0fedd5-40ae-4cb4-a76d-740f1eb55131-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "e8b6fb55dc255f5d"
+  }, {
+    "title" : "Captured log call",
+    "source" : "ae21550f-1b31-4529-b93c-f7af89f227c9-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "2ace0b5b825cced1"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "53092-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

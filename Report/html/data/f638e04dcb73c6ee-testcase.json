@@ -1,0 +1,74 @@
+{
+  "uid" : "f638e04dcb73c6ee",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534772313359,
+    "stop" : 1534772313585,
+    "duration" : 226
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: 'module' object is not callable",
+    "stackTrace" : "self = <test_pending_adv.TestPendingAdv object at 0x11026a2e8>, action = None\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('blocker')\n    @allure.story('Pending Advertiser')\n    def test_adv_01(self, action):\n        \"\"\"\n            用例描述：Pending Advertiser case 01\n            \"\"\"\n        conf = Config()\n        data = PendingAdvList()\n>       ww = run()\nE       TypeError: 'module' object is not callable\n\nTestCase/test_pending_adv.py:28: TypeError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "695c763cbddb1df3",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "cc6ceb75-2136-4f98-80fb-43d99056638a-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "f3f9401fffef068d"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "e8f38690-80bc-4bd4-accd-e3fc9641dc29-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "d5f5e68defcbc3e6"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "53694-MainThread"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "c12b27ac522d31ee",
+  "name" : "TestCollections.test_collections_01",
+  "title" : "Test collections 01",
+  "time" : {
+    "start" : 1534860789241,
+    "stop" : 1534860789564,
+    "duration" : 323
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: string indices must be integers",
+    "stackTrace" : "self = <test_collections.TestCollections object at 0x10ecb34a8>\naction = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('normal')\n    @allure.story('Collections')\n    def test_collections_01(self, action):\n        \"\"\"\n                用例描述：查看用户'da1677475c27'的Collections\n            \"\"\"\n        conf = Config()\n        data = Collections()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n        response = request.post_request(api_url, params[0], headers[0])\n        print(response)\n>       print(response[1][1]['Response body'])\nE       TypeError: string indices must be integers\n\nTestCase/test_collections.py:39: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：查看用户'da1677475c27'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "ff5352cb14d193bd",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "3f349acc-da4d-4dfc-afac-38287b2339f3-attachment.txt",
+    "type" : "text/plain",
+    "size" : 794,
+    "uid" : "831c9d729a94df98"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "91d3d760-2c43-45c4-b825-4107716feac0-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "47692124283fdf17"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "24313-MainThread"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

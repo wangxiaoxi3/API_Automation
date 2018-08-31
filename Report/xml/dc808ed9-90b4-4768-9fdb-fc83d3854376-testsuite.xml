@@ -1,0 +1,44 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1535204981939" stop="1535204984378">
+  <name>test_personal</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1535204981939" status="passed" stop="1535204983042">
+      <description>
+            用例描述：未登陆状态下更新Personal个人简介
+        </description>
+      <name>TestPersonal.test_personal_01</name>
+      <attachments>
+        <attachment source="5cda7d4b-f7c1-4ee9-b8ff-be925ac1af6c-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="feature" value="Personal"/>
+        <label name="story" value="Personal"/>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="22732-MainThread"/>
+        <label name="host" value="xiaoxideMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1535204983044" status="passed" stop="1535204984378">
+      <description>
+            用例描述：登陆状态下更新Personal个人简介
+        </description>
+      <name>TestPersonal.test_personal_02</name>
+      <attachments>
+        <attachment source="97d31a92-343a-471d-82c6-9a897cbd4739-attachment.txt" title="Captured log call" type="text/plain"/>
+      </attachments>
+      <labels>
+        <label name="feature" value="Personal"/>
+        <label name="story" value="Personal"/>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="22732-MainThread"/>
+        <label name="host" value="xiaoxideMacBook-Pro.local"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

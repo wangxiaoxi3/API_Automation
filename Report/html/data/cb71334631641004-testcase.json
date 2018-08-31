@@ -1,0 +1,74 @@
+{
+  "uid" : "cb71334631641004",
+  "name" : "TestBasic.test_basic_02",
+  "title" : "Test basic 02",
+  "time" : {
+    "start" : 1534924583066,
+    "stop" : 1534924583703,
+    "duration" : 637
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: 'int' object is not callable",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10edc87f0>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_02(self, action):\n        \"\"\"\n                用例描述：登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        test = Assert.Assertions()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[1]\n>       response = request.post_request(api_url, params[1], headers[1])\n\nTestCase/test_basic.py:65: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Request.Request object at 0x10ed8fda0>\nurl = 'http://www.jianshu.com/settings/basic.json', data = None\nheader = {'Content-Type': 'keep-alive', 'Cookie': 'read_mode=day; locale=zh-CN; default_font=font1; remember_user_token=W1s3MTE...zilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/67.0.3396.99 Safari/537.36'}\n\n    def post_request(self, url, data, header):\n        \"\"\"\n            :param url:\n            :param data:\n            :param header:\n            :return:\n    \n            \"\"\"\n        if not url.startswith('http://'):\n            url = '%s%s' % ('http://', url)\n            print(url)\n        try:\n            if data is None:\n                response = self.get_session.post(url=url, headers=header)\n            else:\n                response = self.get_session.post(url=url, params=data, headers=header)\n    \n        except requests.RequestException as e:\n            print('%s%s' % ('RequestException url: ', url))\n            print(e)\n            return ()\n    \n        except Exception as e:\n            print('%s%s' % ('Exception url: ', url))\n            print(e)\n            return ()\n    \n>       time_consuming = response.elapsed.microseconds()\nE       TypeError: 'int' object is not callable\n\nCommon/Request.py:92: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "d3188ee10c5a9d5e",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "32f1020e-b9ad-405b-884c-74ed2b61edcf-attachment.txt",
+    "type" : "text/plain",
+    "size" : 708,
+    "uid" : "6890dab988d3e424"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "504ff742-2a36-48db-aed0-489e8a70efd3-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "ef39be7c246c738a"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "67372-MainThread"
+  }, {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

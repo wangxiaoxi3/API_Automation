@@ -1,0 +1,74 @@
+{
+  "uid" : "4eecd96151a9f518",
+  "name" : "TestCollections.test_collections_01",
+  "title" : "Test collections 01",
+  "time" : {
+    "start" : 1534860560793,
+    "stop" : 1534860560886,
+    "duration" : 93
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "MissingSchema: Invalid URL '/Login': No schema supplied. Perhaps you meant http:///Login?",
+    "stackTrace" : "self = <test_collections.TestCollections object at 0x1064f3828>\naction = 'debug'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('normal')\n    @allure.story('Collections')\n    def test_collections_01(self, action):\n        \"\"\"\n                用例描述：查看用户'da1677475c27'的Collections\n            \"\"\"\n        conf = Config()\n        data = Collections()\n>       request = Request.Request(action)\n\nTestCase/test_collections.py:28: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nCommon/Request.py:24: in __init__\n    self.get_session = self.session.get_session(env)\nCommon/Session.py:31: in get_session\n    response = session_debug.post(login_url, parm, headers=headers)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:555: in post\n    return self.request('POST', url, data=data, json=json, **kwargs)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:494: in request\n    prep = self.prepare_request(req)\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/sessions.py:437: in prepare_request\n    hooks=merge_hooks(request.hooks, self.hooks),\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:305: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>, url = '/Login', params = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/requests/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode('utf8')\n        else:\n            url = unicode(url) if is_py2 else str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if ':' in url and not url.lower().startswith('http'):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n            error = (\"Invalid URL {0!r}: No schema supplied. Perhaps you meant http://{0}?\")\n            error = error.format(to_native_string(url, 'utf8'))\n    \n>           raise MissingSchema(error)\nE           requests.exceptions.MissingSchema: Invalid URL '/Login': No schema supplied. Perhaps you meant http:///Login?\n\n/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/requests/models.py:379: MissingSchema"
+  },
+  "description" : {
+    "value" : "\n            用例描述：查看用户'da1677475c27'的Collections\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "2502dec3270f7c04",
+    "name" : "test_collections",
+    "title" : "Test collections"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "8696469a-d648-4c52-9e35-7fcef8473540-attachment.txt",
+    "type" : "text/plain",
+    "size" : 303,
+    "uid" : "18bd154358bfe3b6"
+  }, {
+    "title" : "Captured log setup",
+    "source" : "4b5ed166-2505-42ec-86d7-bd261138d9bb-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "62164dba307b3556"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_collections"
+  }, {
+    "name" : "host",
+    "value" : "192.168.0.101"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "story",
+    "value" : "Collections"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "thread",
+    "value" : "23897-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

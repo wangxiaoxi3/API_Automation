@@ -1,0 +1,68 @@
+{
+  "uid" : "884e1315825f07a1",
+  "name" : "TestPersonal.test_personal_01",
+  "title" : "Test personal 01",
+  "time" : {
+    "start" : 1535077118465,
+    "stop" : 1535077119383,
+    "duration" : 918
+  },
+  "summary" : {
+    "attachments" : 1,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 200 == 403",
+    "stackTrace" : "self = <test_personal.TestPersonal object at 0x10ec38668>, action = 'release'\n\n    @pytest.allure.feature('Personal')\n    @allure.severity('blocker')\n    @allure.story('Personal')\n    def test_personal_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下更新Personal个人简介\n            \"\"\"\n        conf = Config()\n        data = Personal()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://'+host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url+urls[0]\n        print(params[0][0])\n        response = request.post_request(api_url, params[0][0], headers[0])\n        print(response)\n>       assert response['code'] == 403\nE       assert 200 == 403\n\nTestCase/test_personal.py:40: AssertionError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下更新Personal个人简介\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "6434d1dd00be0720",
+    "name" : "test_personal",
+    "title" : "Test personal"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log call",
+    "source" : "ebbfc2e9-0818-4acf-b24d-e4c6c3c9210d-attachment.txt",
+    "type" : "text/plain",
+    "size" : 857,
+    "uid" : "dfe2b6ceefdb1ed4"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-name",
+    "value" : "test_personal"
+  }, {
+    "name" : "thread",
+    "value" : "62456-MainThread"
+  }, {
+    "name" : "feature",
+    "value" : "Personal"
+  }, {
+    "name" : "story",
+    "value" : "Personal"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

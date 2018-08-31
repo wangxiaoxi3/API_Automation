@@ -1,0 +1,74 @@
+{
+  "uid" : "2e752e3247837ad3",
+  "name" : "TestPendingAff.test_pending_aff",
+  "title" : "Test pending aff",
+  "time" : {
+    "start" : 1534773020926,
+    "stop" : 1534773020934,
+    "duration" : 8
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "AssertionError: assert 0",
+    "stackTrace" : "self = <test_pending_offer.TestPendingAff object at 0x1102e3080>\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('normal')\n    @allure.story('Pending Offer')\n    @allure.issue(\"BUG号：456\")\n    @allure.testcase(\"用例名：Pending Offer\")\n    def test_pending_aff(self):\n        \"\"\"\n            用例描述：Pending Offer case 01\n            \"\"\"\n        # conf = Config()\n        # data = PendingAffList()\n        # #环境定义\n        # env = 'debug'\n        # req = Request.Request(env)\n        # #URL拼接\n        # host = conf.host_debug\n        # req_url = 'http://' + host\n    \n        #\n        # urls = data.url\n        # datas = data.data\n        # headers = data.header\n        #\n        # for i in range(0, len(urls)):\n        #     api_url = req_url + urls[i]\n        #     sss = req.post_request(api_url, datas[i], headers[i])\n        #     print(sss)\n>       assert 0\nE       assert 0\n\nTestCase/test_pending_offer.py:54: AssertionError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Offer case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "FAILED",
+  "testId" : {
+    "name" : "用例名：Pending Offer",
+    "url" : "用例名：Pending Offer"
+  },
+  "suite" : {
+    "uid" : "89ed334b4e4af0f7",
+    "name" : "test_pending_offer",
+    "title" : "Test pending offer"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ {
+    "name" : "BUG号：456",
+    "url" : "BUG号：456"
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "55011-MainThread"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_offer"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "story",
+    "value" : "Pending Offer"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "issue",
+    "value" : "BUG号：456"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "testId",
+    "value" : "用例名：Pending Offer"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

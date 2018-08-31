@@ -1,0 +1,74 @@
+{
+  "uid" : "319dc696927c27e7",
+  "name" : "TestBasic.test_basic_01",
+  "title" : "Test basic 01",
+  "time" : {
+    "start" : 1534905349896,
+    "stop" : 1534905350676,
+    "duration" : 780
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: list indices must be integers or slices, not str",
+    "stackTrace" : "self = <test_basic.TestBasic object at 0x10ebaddd8>, action = 'release'\n\n    @pytest.allure.feature('Home')\n    @allure.severity('blocker')\n    @allure.story('Basic')\n    def test_basic_01(self, action):\n        \"\"\"\n                用例描述：未登陆状态下查看基础设置\n            \"\"\"\n        conf = Config()\n        data = Basic()\n        request = Request.Request(action)\n    \n        host = conf.host_debug\n        req_url = 'http://' + host\n        urls = data.url\n        params = data.data\n        headers = data.header\n    \n        api_url = req_url + urls[0]\n>       response = request.get_request(api_url, params[0], headers[0])\n\nTestCase/test_basic.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Common.Request.Request object at 0x10ebadf28>\nurl = 'http://www.jianshu.com/settings/basic.json', data = None\nheader = {'Content-Type': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/67.0.3396.99 Safari/537.36'}\n\n    def get_request(self, url, data, header):\n        \"\"\"\n            :param url:\n            :param data:\n            :param header:\n            :return:\n    \n            \"\"\"\n        if not url.startswith('http://'):\n            url = '%s%s' % ('http://', url)\n            print(url)\n    \n        try:\n            if data is None:\n                response = self.get_session.get(url=url, headers=header)\n            else:\n                response = self.get_session.get(url=url, params=data, headers=header)\n    \n        except requests.RequestException as e:\n            print('%s%s' % ('RequestException url: ', url))\n            print(e)\n            return ()\n    \n        except Exception as e:\n            print('%s%s' % ('Exception url: ', url))\n            print(e)\n            return ()\n    \n        time_consuming = response.elapsed.total_seconds()\n        # Common.Consts.STRESS_LIST.append(time_consuming)\n    \n        # return (response.status_code,\n        #         ['Response body: %s' % (response.text,),\n        #          'Time-consuming: %sms' % (time_consuming,), 'Sole-mark: %s' % (time.time())])\n        response_dicts = []\n>       response_dicts['code'] = response.status_code\nE       TypeError: list indices must be integers or slices, not str\n\nCommon/Request.py:62: TypeError"
+  },
+  "description" : {
+    "value" : "\n            用例描述：未登陆状态下查看基础设置\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "a9d064c217f96643",
+    "name" : "test_basic",
+    "title" : "Test basic"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "643a2c62-335c-4e6f-8f82-82219a6b6507-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "2645a99023344c76"
+  }, {
+    "title" : "Captured log call",
+    "source" : "ab95fc8c-b592-47a9-8093-d91f32439ce2-attachment.txt",
+    "type" : "text/plain",
+    "size" : 707,
+    "uid" : "855b36555b949fda"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Basic"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_basic"
+  }, {
+    "name" : "feature",
+    "value" : "Home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "thread",
+    "value" : "34783-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,0 +1,74 @@
+{
+  "uid" : "51c2c54ff4847bf7",
+  "name" : "TestPendingAdv.test_adv_01",
+  "title" : "Test adv 01",
+  "time" : {
+    "start" : 1534772354270,
+    "stop" : 1534772354480,
+    "duration" : 210
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "TypeError: 'module' object is not callable",
+    "stackTrace" : "self = <test_pending_adv.TestPendingAdv object at 0x110295470>, action = None\n\n    @pytest.allure.feature('Affillate API')\n    @allure.severity('blocker')\n    @allure.story('Pending Advertiser')\n    def test_adv_01(self, action):\n        \"\"\"\n            用例描述：Pending Advertiser case 01\n            \"\"\"\n        conf = Config()\n        data = PendingAdvList()\n>       ww = run()\nE       TypeError: 'module' object is not callable\n\nTestCase/test_pending_adv.py:28: TypeError"
+  },
+  "description" : {
+    "value" : "\n        用例描述：Pending Advertiser case 01\n        ",
+    "type" : "TEXT"
+  },
+  "severity" : "BLOCKER",
+  "status" : "FAILED",
+  "testId" : null,
+  "suite" : {
+    "uid" : "cfdb8888282c8bb6",
+    "name" : "test_pending_adv",
+    "title" : "Test pending adv"
+  },
+  "steps" : [ ],
+  "attachments" : [ {
+    "title" : "Captured log setup",
+    "source" : "7ad663b3-1893-4baa-ab2a-2b9c38ee14e0-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "deddf9c46dbf178f"
+  }, {
+    "title" : "Captured log call",
+    "source" : "0978f962-ddc9-4710-b67c-85619d5b88b2-attachment.txt",
+    "type" : "text/plain",
+    "size" : 151,
+    "uid" : "24c2b4eee50f4010"
+  } ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Pending Advertiser"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_pending_adv"
+  }, {
+    "name" : "thread",
+    "value" : "53796-MainThread"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "feature",
+    "value" : "Affillate API"
+  }, {
+    "name" : "suite-title",
+    "value" : null
+  }, {
+    "name" : "host",
+    "value" : "xiaoxideMacBook-Pro.local"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  } ],
+  "parameters" : [ ]
+}
