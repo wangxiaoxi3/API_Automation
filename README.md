@@ -13,6 +13,10 @@
 
 `Assert.py` 封装assert方法
 
+`Hash.py` 封装常用加密方法
+
+`Session.py` 封装获取登录cookies方法
+
 `run.py` 核心代码。定义并执行用例集，生成报告
 
 ----
