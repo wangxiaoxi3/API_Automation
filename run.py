@@ -30,11 +30,11 @@ if __name__ == '__main__':
     html_report_path = conf.html_report_path
 
     # 定义测试集
-    allure_list = '--allure_features=Home,Personal'
+#     allure_list = '--allure_features=Home,Personal'
 
-    args = ['-s', '-q', '--alluredir', xml_report_path, allure_list]
+    args = ['-s', '-q', '--alluredir', xml_report_path]
     log.info('执行用例集为：%s' % allure_list)
-    self_args = sys.argv[1:]
+#     self_args = sys.argv[1:]
     pytest.main(args)
     cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
 
