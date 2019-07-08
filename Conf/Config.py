@@ -7,6 +7,7 @@ from configparser import ConfigParser
 from Common import Log
 import os
 
+
 class Config:
     # titles:
     TITLE_DEBUG = "private_debug"

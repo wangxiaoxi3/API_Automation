@@ -88,3 +88,4 @@ def my_aes_decrypt(msg, key, vi):
 
 
 
+print(my_md5('wj123456'))

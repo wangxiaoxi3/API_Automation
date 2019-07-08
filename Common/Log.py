@@ -23,6 +23,7 @@ LEVELS = {
 logger = logging.getLogger()
 level = 'default'
 
+
 def create_file(filename):
     path = filename[0:filename.rfind('/')]
     if not os.path.isdir(path):
@@ -33,18 +34,22 @@ def create_file(filename):
     else:
         pass
 
+
 def set_handler(levels):
     if levels == 'error':
         logger.addHandler(MyLog.err_handler)
     logger.addHandler(MyLog.handler)
+
 
 def remove_handler(levels):
     if levels == 'error':
         logger.removeHandler(MyLog.err_handler)
     logger.removeHandler(MyLog.handler)
 
+
 def get_current_time():
     return time.strftime(MyLog.date, time.localtime(time.time()))
+
 
 class MyLog:
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

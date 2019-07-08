@@ -3,12 +3,8 @@
 # @Author  : WangJuan
 # @File    : Test_Basic.py
 
-import sys
-from os import path
-
 import allure
 import pytest
-sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 from Params.params import Basic
 from Conf.Config import Config

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/API_Automation.iml" filepath="$PROJECT_DIR$/.idea/API_Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aff-tools-easy/.idea/aff-tools.iml" filepath="$PROJECT_DIR$/../aff-tools-easy/.idea/aff-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../study_sample/.idea/study_1.iml" filepath="$PROJECT_DIR$/../study_sample/.idea/study_1.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/code/tasks_proj/.idea/tasks_proj.iml" filepath="$USER_HOME$/Downloads/code/tasks_proj/.idea/tasks_proj.iml" />
+    </modules>
+  </component>
+</project>

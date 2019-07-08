@@ -19,6 +19,7 @@ import pytest
 from Common import Log
 from Common import Shell
 from Conf import Config
+from Common import Email
 
 if __name__ == '__main__':
     conf = Config.Config()
@@ -30,11 +31,7 @@ if __name__ == '__main__':
     html_report_path = conf.html_report_path
 
     # 定义测试集
-    allure_list = '--allure_features=Home,Personal'
-
-    args = ['-s', '-q', '--alluredir', xml_report_path, allure_list]
-    log.info('执行用例集为：%s' % allure_list)
-    self_args = sys.argv[1:]
+    args = ['-s', '-q', '--alluredir', xml_report_path]
     pytest.main(args)
     cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
 
@@ -44,12 +41,10 @@ if __name__ == '__main__':
         log.error('执行用例失败，请检查环境配置')
         raise
 
-    from Common import Email
     try:
         mail = Email.SendMail()
         mail.sendMail()
-
-    except:
+    except Exception as e:
         log.error('发送邮件失败，请检查邮件配置')
         raise
 

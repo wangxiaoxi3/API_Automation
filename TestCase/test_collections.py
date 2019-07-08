@@ -3,13 +3,8 @@
 # @Author  : WangJuan
 # @File    : Test_Collections.py
 
-import sys
-from os import path
-
 import allure
 import pytest
-
-sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 from Params.params import Collections
 from Conf.Config import Config

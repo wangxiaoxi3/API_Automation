@@ -3,18 +3,15 @@
 # @Author  : WangJuan
 # @File    : Test_Personal.py
 
-import sys
-from os import path
 
 import allure
 import pytest
-
-sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 from Params.params import Personal
 from Conf.Config import Config
 from Common import Request
 from Common import Consts
+
 
 class TestPersonal:
 

@@ -1,0 +1,41 @@
+{
+  "uid" : "2b487e139ec72b4a",
+  "name" : "test_collections",
+  "title" : "Test collections",
+  "time" : {
+    "start" : 1559550801138,
+    "stop" : 1559550801138,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "failed",
+    "stackTrace" : "ImportError while importing test module '/Users/wangjuan/workpace/API_Automation/TestCase/test_collections.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nTestCase/test_collections.py:9: in <module>\n    from Params.params import Collections\nE   ImportError: cannot import name 'Collections'"
+  },
+  "description" : {
+    "value" : "This is the tests collection phase. Failures are modules that failed to collect.",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "77eaec459b574343",
+    "name" : "test_collection_phase",
+    "title" : "Collection phase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Collection phase"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collection_phase"
+  } ],
+  "parameters" : [ ]
+}

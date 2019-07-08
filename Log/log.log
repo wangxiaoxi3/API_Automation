@@ -1,1 +1,61 @@
 [DEBUG 2018-08-31 22:11:43]cookies: {'PPY_AFFSESSID1': 's%3AYC2YCWP7JzDtDheX3QBkhlPA.vCFjK9XxSVlq5ZmAZEJyGW15bLG47i31aKG%2FSwBuORE'}
+[INFO 2019-05-07 16:23:13]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:23:13]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:24:01]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:24:01]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:24:19]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:24:19]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:25:42]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:25:42]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:26:28]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:26:28]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:27:08]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:27:08]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:27:09]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[ERROR 2019-05-07 16:27:15]邮件发送失败，请检查邮件配置
+[INFO 2019-05-07 16:28:14]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:28:14]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:28:15]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:28:15]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:28:15]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:28:15]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[INFO 2019-05-07 16:28:16]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Login.yaml
+[ERROR 2019-05-07 16:28:20]邮件发送失败，请检查邮件配置
+[INFO 2019-05-07 16:30:37]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:30:37]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:30:39]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 16:30:39]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 16:30:39]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[ERROR 2019-05-07 16:30:44]邮件发送失败，请检查邮件配置
+[INFO 2019-05-07 16:31:07]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:31:07]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 16:31:35]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 16:31:35]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 17:04:49]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-05-07 17:04:49]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-05-07 17:04:50]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[INFO 2019-05-07 17:04:50]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Collections.yaml
+[INFO 2019-05-07 17:04:50]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Personal.yaml
+[ERROR 2019-05-07 17:04:57]邮件发送失败，请检查邮件配置
+[INFO 2019-06-03 16:33:16]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-06-03 16:33:16]执行用例集为：--allure_features=Home,Personal
+[INFO 2019-06-03 16:33:20]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
+[ERROR 2019-06-03 16:33:25]邮件发送失败，请检查邮件配置

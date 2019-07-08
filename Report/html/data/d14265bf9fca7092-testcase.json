@@ -1,0 +1,41 @@
+{
+  "uid" : "d14265bf9fca7092",
+  "name" : "test_personal",
+  "title" : "Test personal",
+  "time" : {
+    "start" : 1559550801138,
+    "stop" : 1559550801138,
+    "duration" : 0
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 0
+  },
+  "failure" : {
+    "message" : "failed",
+    "stackTrace" : "ImportError while importing test module '/Users/wangjuan/workpace/API_Automation/TestCase/test_personal.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\nTestCase/test_personal.py:10: in <module>\n    from Params.params import Personal\nE   ImportError: cannot import name 'Personal'"
+  },
+  "description" : {
+    "value" : "This is the tests collection phase. Failures are modules that failed to collect.",
+    "type" : "TEXT"
+  },
+  "severity" : "NORMAL",
+  "status" : "BROKEN",
+  "testId" : null,
+  "suite" : {
+    "uid" : "77eaec459b574343",
+    "name" : "test_collection_phase",
+    "title" : "Collection phase"
+  },
+  "steps" : [ ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Collection phase"
+  }, {
+    "name" : "suite-name",
+    "value" : "test_collection_phase"
+  } ],
+  "parameters" : [ ]
+}
