@@ -12,7 +12,6 @@
 # '--allure_features=测试features'
 
 """
-import sys
 
 import pytest
 
@@ -32,8 +31,8 @@ if __name__ == '__main__':
 
     # 定义测试集
     args = ['-s', '-q', '--alluredir', xml_report_path]
-
     pytest.main(args)
+
     cmd = 'allure generate %s -o %s' % (xml_report_path, html_report_path)
 
     try:

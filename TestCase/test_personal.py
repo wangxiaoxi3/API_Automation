@@ -5,7 +5,6 @@
 
 
 import allure
-import pytest
 
 from Params.params import Personal
 from Conf.Config import Config
@@ -15,7 +14,7 @@ from Common import Consts
 
 class TestPersonal:
 
-    @pytest.allure.feature('Personal')
+    @allure.feature('Personal')
     @allure.severity('blocker')
     @allure.story('Personal')
     def test_personal_01(self, action):
@@ -37,7 +36,7 @@ class TestPersonal:
         assert response['code'] == 200
         Consts.RESULT_LIST.append('True')
 
-    @pytest.allure.feature('Personal')
+    @allure.feature('Personal')
     @allure.severity('blocker')
     @allure.story('Personal')
     def test_personal_02(self, action):

@@ -59,3 +59,13 @@
 [INFO 2019-06-03 16:33:16]执行用例集为：--allure_features=Home,Personal
 [INFO 2019-06-03 16:33:20]解析yaml, Path:/Users/wangjuan/workpace/API_Automation/Params/Yaml/Basic.yaml
 [ERROR 2019-06-03 16:33:25]邮件发送失败，请检查邮件配置
+[INFO 2019-07-08 17:27:58]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:29:05]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:30:02]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:30:29]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:30:57]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[ERROR 2019-07-08 17:31:01]邮件发送失败，请检查邮件配置
+[INFO 2019-07-08 17:32:01]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:33:01]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:33:12]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
+[INFO 2019-07-08 17:35:06]初始化配置文件, path=/Users/wangjuan/workpace/API_Automation/Conf/config.ini
